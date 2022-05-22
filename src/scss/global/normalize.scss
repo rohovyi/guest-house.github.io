@@ -1,0 +1,43 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+:root {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing        : inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear  : both;
+    }
+}

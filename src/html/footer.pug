@@ -1,0 +1,26 @@
+footer
+    .container
+        .__nav-footer 
+            nav.__nav-footer-pages 
+                p pages
+                - var items = ['Start', 'Contact', 'Our history', 'Licenses','Instructions','Style guide']
+                - var pages = ['#', '#', '#', '#', '#', '#']
+                    each item, key in items 
+                        if item === 'Start'
+                            .__nav-footer-item.__nav-footer-item-active: a(href=pages[key])= item
+                        else
+                            .__nav-footer-item: a(href=pages[key])= item
+            nav.__nav-footer-social 
+                p social media
+                - var items = ['Airbnb', 'Facebook', 'Instagram']
+                - var social = ['#', '#', '#']
+                    each item, key in items 
+                        a.__nav-footer-item(href=social[key]): img(src='@img/icons/'+items[key]+'-Icon.svg' alt=items[key])
+            .__nav-footer-form 
+                p newsletter
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                include form
+            .__nav-footer-copy
+                img.svg-guest-house-dims(src="@img/icons/icons.svg#guest-house" alt="guest-house")
+                p © Guest House, LLC. All rights reserved. Powered by DARKNESS
+                p +47 (0) 702 88 12 34 example@webflow.io Klubbvika 12, 8310 Kabelvag, Norway

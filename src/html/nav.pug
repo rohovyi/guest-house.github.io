@@ -1,0 +1,17 @@
+nav.__nav
+    .__nav-logo
+        img.svg-guest-house-dims(src="@img/icons/icons.svg#guest-house" alt="guest-house") 
+
+    .__nav-links
+        - var items = ['Start', 'Contact', 'Our history']
+        - var dataItems = ['start', 'contact', 'history']
+            each item, key in items 
+                if item === 'Start'
+                    a.__nav-item.__nav-item-active(href='#' data-link=dataItems[key])= item
+                else
+                    a.__nav-item(href='#' data-link=dataItems[key])= item
+        .__nav-item.__nav-button 
+            a(href='#').__btn.__btn-nav Book now
+    .__nav-collapse.__nav-menu_button
+        .__nav-menu_lines
+    .__nav_overlay

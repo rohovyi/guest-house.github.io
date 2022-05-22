@@ -1,0 +1,223 @@
+.__nav {
+    background-color     : $color-brand;
+    display              : -ms-grid;
+    display              : grid;
+    grid-template-areas  : "logo links";
+    -ms-grid-columns     : 2fr 10fr;
+    grid-template-columns: 2fr 10fr;
+    -ms-grid-rows        : 1fr;
+    grid-template-rows   : 1fr;
+    height               : 80px;
+    top                  : -10px;
+
+    &-logo,
+    &-links,
+    &-button {
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+    }
+
+    &-logo {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 1;
+        grid-area      : logo;
+
+        img {
+            height       : 45px;
+            width        : 128px;
+            left         : 0px;
+            top          : 0px;
+            border-radius: 0px;
+        }
+    }
+
+    &-links {
+        -ms-grid-row    : 1;
+        -ms-grid-column : 2;
+        grid-area       : links;
+        -webkit-box-pack: center;
+        -ms-flex-pack   : center;
+        justify-content : center;
+
+        a {
+            font-family   : $ff__main;
+            font-size     : 15px;
+            line-height   : 20px;
+            letter-spacing: 0rem;
+            color         : white;
+            margin-right  : 1rem;
+
+            &:hover {
+                color: $color-official;
+            }
+        }
+    }
+
+    &-item {
+        white-space: nowrap;
+    }
+
+    &-item-active {
+        a {
+            font-size: 16px;
+            color    : $color-official;
+        }
+    }
+
+    &-collapse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .__nav {
+
+        &-links {
+            &.is-hidden {
+                display: none;
+            }
+
+            position              : fixed;
+            -webkit-box-orient    : vertical;
+            -webkit-box-direction : normal;
+            -ms-flex-direction    : column;
+            flex-direction        : column;
+            -webkit-box-align     : start !important;
+            -ms-flex-align        : start !important;
+            align-items           : flex-start !important;
+            background            : $color-brand;
+            width                 : $__100p;
+            height                : auto;
+            top                   : (-$__100p);
+            right                 : 0;
+            padding               : $rem 0;
+            z-index               : 30;
+            overflow-y            : auto;
+            -webkit-transition    : 0.8s;
+            -o-transition         : 0.8s;
+            transition            : 0.8s;
+        }
+
+        &-button {
+            margin-left: auto;
+        }
+
+        &-item {
+            padding: .5rem;
+        }
+
+        &-collapse {
+            display          : initial !important;
+            display          : -webkit-box !important;
+            display          : -ms-flexbox !important;
+            display          : flex !important;
+            -webkit-box-pack : end;
+            -ms-flex-pack    : end;
+            justify-content  : end;
+            -webkit-box-align: center;
+            -ms-flex-align   : center;
+            align-items      : center;
+            padding-right    : $rem;
+
+        }
+
+        &_overlay {
+            display : none;
+            position: fixed;
+            top     : 0;
+            left    : 0;
+            width   : 100vw;
+            height  : 100vh;
+            z-index : 10;
+        }
+
+        &-menu_button {
+            position          : fixed;
+            top               : 1.5rem;
+            right             : 1.5rem;
+            z-index           : 30;
+            width             : 2rem;
+            height            : 2rem;
+            border-radius     : 50%;
+            background-color  : rgba(255, 255, 255, 0.5);
+            -webkit-transition: 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &-menu_button:hover &-menu_lines {
+            -webkit-filter: brightness(0.7);
+            filter        : brightness(0.7);
+        }
+
+        &-menu_button:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        &-menu_lines::before,
+        &-menu_lines::after,
+        &-menu_lines {
+            position          : absolute;
+            width             : 50px;
+            height            : 3px;
+            background-color  : $color-official;
+            -webkit-transition: 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &-menu_lines {
+            top              : 50%;
+            left             : 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform    : translate(-50%, -50%);
+            transform        : translate(-50%, -50%);
+        }
+
+        &-menu_lines::before {
+            content: '';
+            top    : -12px;
+        }
+
+        &-menu_lines::after {
+            content: '';
+            top    : 12px;
+        }
+
+
+        &_active &-menu_lines {
+            background-color: transparent;
+        }
+
+        &_active &-menu_lines::before {
+            top              : 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform    : rotate(45deg);
+            transform        : rotate(45deg);
+        }
+
+        &_active &-menu_lines::after {
+            top              : 0;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform    : rotate(-45deg);
+            transform        : rotate(-45deg);
+        }
+
+        &_active &-links {
+            top               : 80px;
+            -webkit-transition: 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &_active &_overlay {
+            display         : block;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}

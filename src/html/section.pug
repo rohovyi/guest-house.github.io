@@ -1,0 +1,156 @@
+.start
+    .container 
+        .__box
+            hr
+            p The Guest House is the perfect weekend get-away housing. Located in the Norwegian archipelago, Lofoten, it's a great escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+            p Below you'll find information about the accommodation and what's included in the price. Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
+                a(href='#').__btn.__btn-brand Book now
+.contact
+    .container 
+        .__box
+            hr
+            h2 The Guest House is the perfect weekend getaway cabin.
+.parallax_content
+    img.prllx.prllx-1(src="@img/kitchen.jpg" alt="Header")
+.sleep 
+    .container 
+        .__box 
+            hr
+            h2 Sleeping arrangements.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.
+            ul
+                li 
+                    img.svg-Bed-Icon-dims(src='@img/icons/Bed-Icon.svg' alt='Bed-Icon')
+                    p The cabin is equipped with 12 beds, 4 of which are in bunk. The rent includes linens for all beds.
+                li 
+                    img.svg-Door-Icon-dims(src='@img/icons/Door-Icon.svg' alt='Door-Icon')
+                    p Spread out over two floors, the cabin offers 4 bedrooms. Ranging from 2 to 4 beds per room.
+                li 
+                    img.svg-Bath-Tub-Icon-dims(src='@img/icons/Bath-Tub-Icon.svg' alt='Bath-Tub-Icon')
+                    p The cabin has three bathrooms, all equipped with showers and one with a bath tub,
+.perfect
+    .container 
+        .__box 
+            hr
+            h2 The perfect escape.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.
+            ul.__box-list 
+                li.__box-cell
+                    img.__box-img.svg-Stove-Icon-dims(src="@img/icons/Stove-Icon.svg" alt="Stove-Icon")
+                    p.__box-str Modern Kitchen Appliances
+                    p.__box-str Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                li.__box-cell
+                    img.__box-img.svg-Air-Conditioner-Icon-dims(src="@img/icons/Air-Conditioner-Icon.svg" alt="Air-Conditioner-Icon")
+                    p.__box-str Air Conditioner 
+                    p.__box-str Nullam scelerisque aliquam odio et faucibus.
+                li.__box-cell
+                    img.__box-img.svg-Trees-Icon-dims(src="@img/icons/Trees-Icon.svg" alt="Trees-Icon")
+                    p.__box-str Outdoor Paths 
+                    p.__box-str Nulla rhoncus feugiat eros quis consectetur.
+                li.__box-cell
+                    img.__box-img.svg-Briefcase-Icon-dims(src="@img/icons/Briefcase-Icon.svg" alt="Briefcase-Icon")
+                    p.__box-str Storage Solutions 
+                    p.__box-str Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+                li.__box-cell
+                    img.__box-img.svg-Coffee-Maker-Icon-dims(src="@img/icons/Coffee-Maker-Icon.svg" alt="Coffee-Maker-Icon")
+                    p.__box-str Coffee Maker 
+                    p.__box-str Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                li.__box-cell
+                    img.__box-img.svg-Glass-Icon-dims(src="@img/icons/Glass-Icon.svg" alt="Glass-Icon")
+                    p.__box-str Cutlery Selection 
+                    p.__box-str Duis tristique sed lorem a vestibulum.
+                li.__box-cell
+                    img.__box-img.svg-Forest-Icon-dims(src="@img/icons/Forest-Icon.svg" alt="Forest-Icon")
+                    p.__box-str Natural Scenery 
+                    p.__box-str Cras commodo consequat orci, in convallis risus egestas non.
+                li.__box-cell
+                    img.__box-img.svg-Pizza-Icon-dims(src="@img/icons/Pizza-Icon.svg" alt="Pizza-Icon")
+                    p.__box-str Take-away Options 
+                    p.__box-str Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
+.history
+    .container 
+        .__box
+            hr
+            h2 Past guests.
+            p Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.
+        .swiper
+            .swiper-container.swiper-text
+                .swiper-wrapper.swiper-text-wrapper
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star','Star']
+                            include star
+                        p We had an amazing stay at the Guest House!
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                        p: b Nate Davidsson
+
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star','Star']
+                            include star
+                        p Beautiful little hideaway.
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                        p: b Laura Paulie
+
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star','Star-Outline']
+                            include star
+                        p Best vacation ever!
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                        p: b Greg Todd
+
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star','Star-Outline']
+                            include star
+                        p We had an amazing stay at the Guest House!
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                        p: b Nate Davidsson
+
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star-Outline','Star-Outline']
+                            include star
+                        p Beautiful little hideaway.
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                        p: b Laura Paulie
+
+                    .swiper-slide.swiper-text-slide
+                        .__list
+                            -var classItem = ['Star','Star','Star','Star','Star']
+                            include star
+                        p Best vacation ever!
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                        p: b Greg Todd
+                .swiper-button-prev
+                .swiper-button-next
+.parallax_content
+    img.prllx.prllx-2(src="@img/room.jpg" alt="Header")
+.come_together
+    .container 
+        .__box 
+            hr
+            h2 Come together.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+            ul.__box-list 
+                li.__box-cell
+                    img.__box-img.svg-Wi-Fi-Icon-dims(src="@img/icons/Wi-Fi-Icon.svg" alt="Wi-Fi-Icon")
+                    p.__box-str Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+                li.__box-cell
+                    img.__box-img.svg-Bread-Icon-dims(src="@img/icons/Bread-Icon.svg" alt="Bread-Icon")
+                    p.__box-str Nullam scelerisque aliquam odio et faucibus.
+                li.__box-cell
+                    img.__box-img.svg-Hanger-Icon-dims(src="@img/icons/Hanger-Icon.svg" alt="Hanger-Icon")
+                    p.__box-str Nulla rhoncus feugiat eros quis consectetur.
+                li.__box-cell
+                    img.__box-img.svg-Cutlery-Icon-dims(src="@img/icons/Cutlery-Icon.svg" alt="Cutlery-Icon")
+                    p.__box-str Morbi neque ex, condimentum.
+.already
+    .container 
+        .__box 
+            hr
+            h2 We're already booked up for the spring — hurry up & secure your stay for the summer.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+            a(href='#').__btn.__btn-line Contact
+            a(href='#').__btn.__btn-brand Book now

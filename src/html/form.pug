@@ -1,0 +1,10 @@
+.form 
+    form#form.form__body(action='#')
+        .form__item 
+            input#formEmail.form__input._req._email(type="text" name="email" placeholder="Email*" required)
+            button.__btn(type='submit') Submit
+        .form__item 
+            .file 
+                .file__item 
+                    input#formImage.file__input(type="file" name="image" accept='.jpg,.png,.gif')
+                #formPreview.file__preview

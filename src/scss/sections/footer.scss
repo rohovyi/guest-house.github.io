@@ -1,0 +1,55 @@
+footer {
+    background-color: $color-brand;
+    font-family     : $ff__main;
+    font-size       : 14px;
+    line-height     : 20px;
+    letter-spacing  : 0em;
+    color           : white;
+}
+
+.__nav-footer {
+    display              : -ms-grid;
+    display              : grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.33333%, auto));
+    grid-gap             : 1rem;
+    padding              : $__10px*10 0;
+
+    p:first-child {
+        text-transform: uppercase;
+    }
+
+    a {
+        color      : white;
+        line-height: 2;
+
+        &:hover {
+            color: $color-official;
+        }
+    }
+
+    &-social {
+
+        a {
+            margin-right: 1rem;
+        }
+    }
+
+    &-copy {
+        display              : -webkit-box;
+        display              : -ms-flexbox;
+        display              : flex;
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        -webkit-box-align    : center;
+        -ms-flex-align       : center;
+        align-items          : center;
+
+        img {
+            height       : 70px;
+            width        : 200px;
+            border-radius: 0px;
+        }
+    }
+}

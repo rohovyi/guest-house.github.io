@@ -1,0 +1,61 @@
+header {
+    background: $color-brand;
+}
+
+section:first-of-type {
+    position: relative;
+    color   : white;
+
+    .container {
+        position             : absolute;
+        display              : -webkit-box;
+        display              : -ms-flexbox;
+        display              : flex;
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        -webkit-box-pack     : center;
+        -ms-flex-pack        : center;
+        justify-content      : center;
+        -webkit-box-align    : center;
+        -ms-flex-align       : center;
+        align-items          : center;
+        text-align           : center;
+        top                  : 0;
+        right                : 0;
+        bottom               : 0;
+        left                 : 0;
+        max-height           : 800px;
+    }
+
+    .__hero {
+        text-align: center;
+        height    : 303.5px;
+        margin    : 200px 0;
+
+        &-img {
+            width        : 18.7683284457478vw;
+            height       : 6.5982404692082115vw;
+            left         : calc(50% - 256px/2);
+            top          : calc(50% - 90px/2 - 107px);
+            border-radius: 0px;
+        }
+
+        &-title {
+            font-family   : $ff__main-l;
+            font-size     : 3.5190615835777126vw;
+            font-weight   : 100;
+            line-height   : 3.8856304985337244vw;
+            letter-spacing: 0em;
+        }
+
+        &-sub-title {
+            font-family   : $ff__main-t;
+            font-size     : 14px;
+            line-height   : 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    }
+}
